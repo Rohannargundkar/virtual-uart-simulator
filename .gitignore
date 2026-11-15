@@ -1,0 +1,7 @@
+*.o
+*.out
+build/
+simulator
+test_uart
+virtual_uart
+*.exe
