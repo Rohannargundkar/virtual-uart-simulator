@@ -42,6 +42,59 @@ Execute the simulator:
 
 Enter a data string and baud rate when prompted.
 
+## Sample Output
+
+Example execution with 9600 baud rate, 8 data bits, no parity, and 0% noise:
+
+```text
+=== VIRTUAL UART SIMULATOR ===
+
+Enter data: A
+
+Enter baud rate: 9600
+
+Select data bits:
+1. 5 bits
+2. 6 bits
+3. 7 bits
+4. 8 bits
+5. 9 bits
+Choice: 4
+
+Select parity:
+1. None
+2. Even
+3. Odd
+Choice: 1
+
+Enter noise probability (0-100%): 0
+
+--- TRANSMISSION ---
+
+UART FRAME:
+START: 0
+DATA[0]: 1
+DATA[1]: 0
+DATA[2]: 0
+DATA[3]: 0
+DATA[4]: 0
+DATA[5]: 0
+DATA[6]: 1
+DATA[7]: 0
+STOP: 1
+
+--- TRANSMISSION RESULT ---
+Baud rate:    9600
+Data bits:    8
+Parity:       None
+Stop bits:    1
+Noise:        0%
+Transmitted:  A
+Received:     A
+Status:       SUCCESS
+```
+
+
 ## Testing
 
 The project includes automated tests covering the following functionality:
